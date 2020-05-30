@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Details </title>
+	<script>
+	function passvar()
+	{
+		var fname=document.getElementById("fname").value;
+		var lname=document.getElementById("lname").value;
+		var age=document.getElementById("quantity").value;
+		var no=document.getElementById("count").value;
+		var from=document.getElementById("cityfrom").value;
+		var to=document.getElementById("cityto").value;
+		localStorage.setItem("firstname",fname);
+		localStorage.setItem("lastname",lname);
+		localStorage.setItem("age",age);
+		localStorage.setItem("no_passengers",no);
+		localStorage.setItem("fromcity",from);
+		localStorage.setItem("tocity",to);
+		
+		return false;
+	}
+	</script>
+	<style>
+		<!-- div {
+			background: url('http://martindaveyillustration.co.uk/2dlargeimage_gallery_davey_animation_bus.html');
+				} -->  
+			input[type=number], select {
+		  width: 100%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+				
+				input[type=text], select {
+		  width: 100%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+			
+	 	
+	 	 </style>
+		 <style type="text/css">
+		     body{
+				background-image:url(imi.jpg);
+				background-size:cover;
+				background-attachment:fixed;
+			 }
+		</style>	 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<body style="background-color:powderblue;"  >
+
+  
+	<section class="container-fluid we ">
+	
+		<section class="row justify-content-center">
+			<section class="col-12 col-sm-6 col-md-3">
+			<form class="form" action="ticket.html" >
+				  <div class="form-group">
+				  <h4 >Enter your details </h4><br>
+				     <label for="fname">First name</label><br>
+						<input type="text" id="fname" name="fname" placeholder="First name" required><br><br>
+						<label for="lname">Last name</label><br>
+						<input type="text" id="lname" name="lname" placeholder="Last name" required><br>
+				  </div>
+				  <div class="form-group">	
+					<label for="quantity">Age</label><br>
+					<input type="number" id="quantity" name="quantity" min="3" max="100" placeholder="Age" required>
+				  </div>
+				  <div class="form-group">
+				    <label for="quantity">Number of Passengers</label><br>
+					<input type="number" id="count" name="count" min="1" max="10" placeholder="Number of Passengers" required>
+				  </div>
+				  <div class="form-group">
+				     <label for="cityfrom">From</label><br>
+							<select id="cityfrom" name="cityfrom" required>
+					<!--		  <option value="Nil">Nil</option>  --> 
+							  <option value="Trichy">Trichy</option>
+							  <option value="Madurai">Madurai</option>
+							  <option value="Thirumangalam">Thirumangalam</option>
+							  <option value="Chennai">Chennai</option>
+							  <option value="Coimbatore">Coimbatore</option>
+							  <option value="Sivakaasi">Sivakaasi</option>
+							</select>
+  
+				  </div>
+				  <div class="form-group">
+				     <label for="cityto">To</label><br>
+							<select id="cityto" name="cityto" required>
+					<!--		  <option value="Nil">Nil</option>  --> 
+					        <option value="Madurai">Madurai</option>
+							  <option value="Trichy">Trichy</option>
+							  
+							  <option value="Thirumangalam">Thirumangalam</option>
+							  <option value="Chennai">Chennai</option>
+							  <option value="Coimbatore">Coimbatore</option>
+							  <option value="Sivakaasi">Sivakaasi</option>
+							</select>
+  
+				  </div>
+				  <div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+					<label class="form-check-label" for="exampleCheck1">Please ensure that all details provided are correct</label>
+				  </div>
+				    <button type="submit" class="btn btn-primary btn-block" onclick="passvar();" >Submit</button>
+				
+				</form>
+				<!--<a href="ticket.html" onclick="passvar();">link text</a>-->
+	</section>
+		</section>
+    </section>		
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script>
+
+ function results(){
+ 
+  var fname= document.getElementById('fname').value;
+  var lname= document.getElementById('lname').value;
+  var age= document.getElementById('quantity').value;
+  var num= document.getElementById('count').value;
+  var from= document.getElementById('cityfrom').value;
+  var to= document.getElementById('cityto').value;
+  document.write("<h3>e-Ticket</h3>");
+  document.write("<b>Name :</b>"+ fname +"<br/>");
+  document.write("<b>Last Name :</b>" +lname +"<br/>");
+  document.write("<b>Age :</b>" +age +"<br/>");
+  document.write("<b>No. of passengers :</b>" +num+"<br/>");
+  document.write("<b>From :</b>" +from+"<br/>");
+  document.write("<b>To:</b>" +to+ "<br/>");
+  document.write("<center>Your ticket is confirmed. Have a safe journey!!!</center>");
+   
+}
+/*
+function testJS() {
+    var b = document.getElementById('fname').value,
+        url = 'ticket.html' + encodeURIComponent(b);
+
+    document.location.href = url;
+}*/
+   
+   
+   
+	 
+	 
+	
+</script>
+
+
+<script>
+    localStorage.setItem("firstname", fname);
+</script>  
+
+<link href="ticket.css" rel="stylesheet">
+<style>
+.bg-image {
+background-image: url("bus.jpg");
+background-color: #cccccc;
+height: 500px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+</style>
+
+</body>
+
+
+</html>	

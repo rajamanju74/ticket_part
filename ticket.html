@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- newly added -->
+
+	
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Ticket</title>
+<link rel="stylesheet" href="ticket.css">
+<link rel="stylesheet" href="progressbar.css">
+
+<script>
+function des()
+{
+    //var name=localStorage.getItem("firstname");
+	var name="ffffff";
+}	
+</script>  
+
+
+
+
+
+  </head>
+  <body>
+
+    <div class="card-body mb-4 topstep">
+  		<div class="steps-form">
+  		<!-- Stepper -->
+  			<div class="steps-row setup-panel">
+  				<div class="steps-step">
+  					<a href="#step-9" type="button" class="btn btn-success btn-circle">1</a>
+  					<p>Step 1</p>
+  				</div>
+  				<div class="steps-step">
+  					<a href="#step-10" type="button" class="btn btn-success btn-circle" disabled="disabled">2</a>
+  					<p>Step 2</p>
+  				</div>
+  				<div class="steps-step">
+  					<a href="#step-11" type="button" class="btn btn-success btn-circle" disabled="disabled">3</a>
+  					<p>Step 3</p>
+  				</div>
+  			</div>
+  			</div>
+  		</div>
+
+
+
+
+
+
+
+
+ <section class="container">
+    <h1>E-Ticket</h1>
+      <div class="row">
+        <article class="card fl-left tick">
+          <section class="date">
+            <time datetime="23th feb">
+              <span>No</span><span>24/3</span>
+            </time>
+          </section>
+          <section id="demo55" onload = "myFunction()"class="card-cont">
+             <small> 
+			<span id="fname"></span> <span id="lname"></span>
+            </small>
+            <h3><span id="fromc"></span> to <span id="toc"></span> <br><br>
+			Ticket count : <span id="num"></span>
+			</h3>
+            <div class="even-date">
+             <i class="fa fa-calendar"></i>
+             <time>
+               <span>wednesday 28 may 2020</span>
+               <span>08:55pm to 12:00 am</span><br><br>
+             </time>
+            </div>
+            <div class="even-info">
+              <i class="fa fa-map-marker"></i>
+              <h2>
+                enjoy travelling
+              </h2>
+            </div>
+			
+			
+          </section>		
+
+
+<!--
+<script>
+function myFunction() {
+	alert("inside mm");
+  document.getElementById("demo55").innerHTML = "name\n\n Sivakasi to Thiruthangal\n date\n time \n enjoy travelling";
+  
+}
+
+</script>
+-->
+<!-- first name-->
+			<script>
+			document.getElementById("fname").innerHTML=localStorage.getItem("firstname");
+			</script>
+<!-- last name-->			
+			<script>
+			document.getElementById("lname").innerHTML=localStorage.getItem("lastname");
+			</script>
+<!-- from-->			
+			<script>
+			document.getElementById("fromc").innerHTML=localStorage.getItem("fromcity");
+			</script>
+<!-- to -->			
+			<script>
+			document.getElementById("toc").innerHTML=localStorage.getItem("tocity");
+			</script>
+			
+			
+<!-- last name -->		
+			<script>
+			document.getElementById("lname").innerHTML=localStorage.getItem("lastname");
+			</script>
+<!-- no. passengers -->
+			<script>
+			document.getElementById("num").innerHTML=localStorage.getItem("no_passengers");
+			</script>
+		,!--	<script>
+			document.getElementById("name").innerHTML=localStorage.getItem("firstname");
+			</script>
+		-->
+
+  </body>
+</html>
